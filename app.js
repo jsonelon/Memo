@@ -30,6 +30,8 @@ const decrypt = (combined, password) => {
 async function main() {
   let file = await inputTxtLine(`File path:`)
 
+  file = './file/' + file
+
   let text = ""
   let me = ""
   if (existsSync(file)) {
